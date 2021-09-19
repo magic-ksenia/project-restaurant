@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=x, initial-scale=1.0" />
     <!-- SEO -->
     <meta name="description" content="Gallery, LUX KITCHEN" />
     <title>Gallery | LUX KITCHEN</title>
@@ -31,19 +31,112 @@
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
-  <body>
-    <h1>Gallery | LUX KITCHEN</h1>
-    <button type="button" class="btn btn-secondary">
-      <a href="/" title="Home Lux Kitchen">Home</a>
-    </button>
-    <button type="button" class="btn btn-light">
-      <a href="/reservations.html" title="Book a table">Reserve table</a>
-    </button>
-    <button type="button" class="btn btn-light">
-      <a href="/menu.html" title="Browse menu">Browse menu</a>
-    </button>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!--  Fixed navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><h1 class="m-0">LUX KITCHEN</h1></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/" title="Home">Home</a>
+              <a class="nav-link" href="/#about" title="Our story and manifesto"
+                >About</a
+              >
+              <a class="nav-link" href="/#opening-hours" title="Opening hours"
+                >Opening hours</a
+              >
+              <a class="nav-link" href="/#contact" title="Contact">Contact</a>
+              <a class="nav-link" href="/menu.html" title="Browse menu">Menu</a>
+              <a class="nav-link" href="/reservations.html" title="Book a table"
+                >Reservations</a
+              >
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/gallery.html"
+                title="Gallery"
+                >Gallery</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <!-- Optional JavaScript -->
+    <main class="flex-shrink-0">
+      <div class="container-fluid px-0">
+        <h2>Gallery</h2>
+        <button type="button" class="btn btn-secondary">
+          <a href="/" title="Home Lux Kitchen">Home</a>
+        </button>
+        <button type="button" class="btn btn-light">
+          <a href="/reservations.html" title="Book a table">Reserve table</a>
+        </button>
+        <button type="button" class="btn btn-light">
+          <a href="/menu.html" title="Browse menu">Browse menu</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto bg-dark">
+      <div class="container-fluid m-0 text-light text-center p-2">
+        <div class="project-footer d-sm-flex justify-content-between">
+          <div class="social-media-links">
+            <a
+              href="https://www.facebook.com/luxkitchen.se"
+              tittle="Facebook @luxkitchen.se"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square mx-2"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/luxkitchen.se/"
+              title="Instagram @luxkitchen.se"
+              target="_blank"
+              ><i class="fab fa-instagram mx-2"></i
+            ></a>
+            <a
+              href="mailto:hello@luxkitchen.se"
+              title="Mail to hello@luxkitchen.se"
+              target="_blank"
+            >
+              <i class="far fa-envelope mx-2"></i
+            ></a>
+          </div>
+          <div class="copyright">
+            &copy; 2002 Lux Kitchen. All rights reserved.
+          </div>
+        </div>
+        <div class="footer-credentials float-sm-end">
+          <a
+            href="https://github.com/magic-ksenia/project-restaurant"
+            title="Project repo on GitHub @magic-ksenia"
+            target="_blank"
+            >Open-source project</a
+          >
+          by
+          <a
+            href="https://www.linkedin.com/in/oksana-stalbovskaya-19901126/"
+            title="LinkedIn Oksana Stalbovskaya"
+            target="_blank"
+            >Oksana Stalbovskaya</a
+          >.
+        </div>
+      </div>
+    </footer>
+
     <!-- BOOTSTRAP 5.0.2  JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
