@@ -27,11 +27,12 @@ body {
 }
 
 main > .container-fluid {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--second-font);
   text-transform: uppercase;
 }
@@ -41,11 +42,41 @@ h2 {
   font-weight: 700;
 }
 
-section {
-  margin-block: 15px;
+h3 {
+  padding-top: 50px;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
+
+section {
+  margin-bottom: 15px;
+}
+
 article {
   margin-inline: 10px;
+}
+section.hero-home {
+  padding-bottom: 230px;
+  margin-bottom: -20px;
+}
+
+.nav-buttons a {
+  font-size: 0.6rem;
+  padding: 10px 22px;
+  color: var(--first-text-color);
+  background: var(--second-bg-color);
+  border: 0.5px solid var(--first-bg-color);
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-buttons a:hover,
+.nav-buttons a:active {
+  border: 0.5px solid var(--second-bg-color);
+  color: var(--second-text-color);
+  background: var(--first-bg-color);
 }
 
 ul {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="109px" viewBox="0 0 23 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow</title>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_Startseite" transform="translate(-828.000000, -903.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="arrow" transform="translate(828.000000, 903.000000)">
+                <line x1="11.6578947" y1="0" x2="11.6578947" y2="108" id="Path" stroke-dasharray="304"></line>
+                <path d="M0.657894737,96.0009497 C0.657894737,96.0009497 11.2912281,95.6581197 11.6578947,108" id="Path" stroke-dasharray="51"></path>
+                <path d="M22.6578947,96.0009497 C22.6578947,96.0009497 12.0245614,95.6581197 11.6578947,108" id="Path" stroke-dasharray="51"></path>
+            </g>
+        </g>
+    </g>
+</svg>
