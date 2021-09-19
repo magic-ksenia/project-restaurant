@@ -4,8 +4,8 @@
 
   --first-bg-color: #0a0a0a;
   --second-bg-color: #fafafa;
-  --third-background-color: #a9927d;
-  --forth-background-color: #523629;
+  --third-bg-color: #a9927d;
+  --forth-bg-color: #523629;
 
   --first-text-color: #212121;
   --second-text-color: #fafafa;
@@ -38,4 +38,62 @@ h2 {
 
 h2 {
   margin-block: 10px;
+  font-weight: 700;
+}
+
+section {
+  margin-block: 15px;
+}
+article {
+  margin-inline: 10px;
+}
+
+ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+li {
+  margin-block: 10px;
+}
+
+li a {
+  color: var(--first-text-color);
+  text-decoration: none;
+}
+
+li a:hover,
+li a:active {
+  color: var(--third-text-color);
+}
+
+div.third-bg-color {
+  background: var(--third-bg-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 20px;
+  padding-block: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+div.forth-bg-color {
+  color: var(--second-text-color);
+  background: var(--forth-bg-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 20px;
+  padding-block: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer a {
+  color: var(--second-text-color);
+}
+
+footer a:hover,
+footer a:active {
+  color: var(--second-text-color);
+  text-shadow: 0px 0px 15px var(--third-text-color);
+  text-decoration: none;
 }
