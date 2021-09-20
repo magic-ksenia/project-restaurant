@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=x, initial-scale=1.0" />
     <!-- SEO -->
+    <meta name="author" content="Oksana's Restaurant Lux Kitchen" />
     <meta
       name="description"
       content="LUX KITCHEN is a classic brasserie in the heart of Stockholm, founded in 2002. It offers a sophisticated atmosphere, high-class food and drinks, and out of the ordinary service. Indulge yourself. Enjoy the Lux Kitchen experience."
@@ -15,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Montserrat:wght@200;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <!-- BOOTSTRAP 5.0.2 CSS -->
@@ -37,9 +38,12 @@
   <body class="d-flex flex-column h-100">
     <header>
       <!--  Fixed navbar -->
+
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"><h1 class="m-0">LUX KITCHEN</h1></a>
+          <h1 class="mb-0">
+            <a class="navbar-brand fs-1" href="/">LUX KITCHEN</a>
+          </h1>
           <button
             class="navbar-toggler"
             type="button"
@@ -53,27 +57,82 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/"
-                title="Home"
-                >Home</a
-              >
-              <a class="nav-link" href="/#about" title="Our story and manifesto"
-                >About</a
-              >
-              <a class="nav-link" href="/#opening-hours" title="Opening hours"
-                >Opening hours</a
-              >
-              <a class="nav-link" href="/#contact" title="Contact">Contact</a>
-              <a class="nav-link" href="/menu.html" title="Browse menu">Menu</a>
-              <a class="nav-link" href="/reservations.html" title="Book a table"
-                >Reservations</a
-              >
-              <a class="nav-link" href="/gallery.html" title="Gallery"
-                >Gallery</a
-              >
+              <div class="d-lg-none text-center bg-light">
+                <a
+                  class="nav-link active text-dark text-decoration-underline"
+                  aria-current="page"
+                  href="/"
+                  title="Home"
+                  >Home</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/#about"
+                  title="Our story and manifesto"
+                  >About</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/#opening-hours"
+                  title="Opening hours"
+                  >Opening hours</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/#contact"
+                  title="Contact"
+                  >Contact</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/menu.html"
+                  title="Browse menu"
+                  >Menu</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/reservations.html"
+                  title="Book a table"
+                  >Reservations</a
+                >
+                <a
+                  class="nav-link text-dark text-decoration-underline"
+                  href="/gallery.html"
+                  title="Gallery"
+                  >Gallery</a
+                >
+              </div>
+              <div class="d-none d-sm-none d-md-none">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Home"
+                  >Home</a
+                >
+                <a
+                  class="nav-link"
+                  href="/#about"
+                  title="Our story and manifesto"
+                  >About</a
+                >
+                <a class="nav-link" href="/#opening-hours" title="Opening hours"
+                  >Opening hours</a
+                >
+                <a class="nav-link" href="/#contact" title="Contact">Contact</a>
+                <a class="nav-link" href="/menu.html" title="Browse menu"
+                  >Menu</a
+                >
+                <a
+                  class="nav-link"
+                  href="/reservations.html"
+                  title="Book a table"
+                  >Reservations</a
+                >
+                <a class="nav-link" href="/gallery.html" title="Gallery"
+                  >Gallery</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -84,10 +143,14 @@
       <div class="container-fluid px-0">
         <section
           class="hero-home"
-          style="background-image: url(/media/food4.png)"
+          style="
+            background-image: url(/media/home-bg-image-mobile.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
         >
           <h3 class="text-light text-center">Indulge Yourself</h3>
-          <div class="nav-buttons d-flex justify-content-evenly py-5">
+          <div class="nav-links d-flex justify-content-evenly py-5">
             <a href="/reservations.html" title="Book a table">Reserve table</a>
             <a href="/menu.html" title="Browse menu">Browse menu</a>
           </div>
@@ -108,16 +171,16 @@
             <p>
               Treat yourself to some time out in LUX KITCHEN, and experience
               Stockholm in a new way. With its unrivalled setting in the heart
-              of Stockholm, our restaurant will serve you with unique fine
-              dishes that are uniquely picked from European cuisine. You’ll be
-              amazed by our culinary delights, its performance marked with an
-              air of elegance.
+              of Stockholm, our restaurant will serve you Scandinavian gourmet
+              menu with French and Italian influences and emphasy to fresh local
+              seafood. You’ll be amazed by our culinary delights, its
+              performance marked with an air of elegance.
             </p>
             <p>
               LUX KITCHEN was created through the initiative of a group of
               international professionally trained chefs, sommelier and local
-              entrepreneurs. The atmosphere that we create in our shops, the
-              products that we offer our clients, are the outcome of that
+              entrepreneurs. The atmosphere that we create in our restaurant,
+              the products that we offer our clients, are the outcome of that
               knowledge and the result of our passion and commitment, which is
               renewed every day.
             </p>
@@ -126,12 +189,15 @@
           <article class="our-traditions">
             <h2>Our traditions</h2>
             <p>
-              We conceive our passion for food as a lifestyle. We believe that
-              beauty and quality can be found in caring for small but important
-              details. The traditions of our country are our main source of
-              inspiration. We value the artisanal way of working, with care,
-              hands and heart. Perfection is nothing without happiness, just as
-              a coffee break is nothing without chocolate.
+              We believe in flavours and conceive our passion for food as a
+              lifestyle. We believe that beauty and quality can be found in
+              caring for small but important details. The traditions of our
+              country are our main source of inspiration. We value the artisanal
+              way of working, with care, hands and heart. Our food and wine
+              philosophy is in constant evolution. We believe that the customer
+              will enjoy accompanying us in the eye-opening adventure of finding
+              new and exhilarating tastes and stories that can only be
+              experienced at our table.
             </p>
           </article>
           <div class="forth-bg-color">Enjoy the Lux Kitchen experience</div>
@@ -176,11 +242,16 @@
         <div class="project-footer d-sm-flex justify-content-between">
           <div class="social-media-links">
             <a
+              href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
+              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
+              target="_blank"
+            >
+              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
+            ><a
               href="https://www.facebook.com/luxkitchen.se"
               tittle="Facebook @luxkitchen.se"
               target="_blank"
-            >
-              <i class="fab fa-facebook-square mx-2"></i
+              ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
               href="https://www.instagram.com/luxkitchen.se/"
