@@ -37,12 +37,13 @@
 
   <body class="d-flex flex-column h-100">
     <header>
-      <!--  Fixed navbar -->
+      <!--  Navbar  -->
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <h1 class="mb-0">
             <a class="navbar-brand fs-1" href="/">LUX KITCHEN</a>
           </h1>
+          <!--  Toogle Button for mobile-tablet navbar -->
           <button
             class="navbar-toggler"
             type="button"
@@ -54,25 +55,128 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!--  Navbar Links-->
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="/" title="Home">Home</a>
-              <a class="nav-link" href="/#about" title="Our story and manifesto"
+              <!--  Mobile layout: Explanded Navbar Links-->
+              <a
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/"
+                title="Home"
+                >Home</a
+              >
+              <a
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/#about"
+                title="Our story and manifesto"
                 >About</a
               >
-              <a class="nav-link" href="/#opening-hours" title="Opening hours"
+              <a
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/#opening-hours"
+                title="Opening hours"
                 >Opening hours</a
               >
-              <a class="nav-link" href="/#contact" title="Contact">Contact</a>
-              <a class="nav-link" href="/menu.html" title="Browse menu">Menu</a>
               <a
-                class="nav-link active"
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/#contact"
+                title="Contact"
+                >Contact</a
+              >
+              <a
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/menu.html"
+                title="Browse menu"
+                >Menu</a
+              >
+              <a
+                class="
+                  nav-link
+                  active
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
                 aria-current="page"
                 href="/reservations.html"
                 title="Book a table"
                 >Reservations</a
               >
-              <a class="nav-link" href="/gallery.html" title="Gallery"
+              <a
+                class="
+                  nav-link
+                  d-lg-none
+                  bg-light
+                  text-dark text-center text-decoration-underline
+                "
+                href="/gallery.html"
+                title="Gallery"
+                >Gallery</a
+              >
+              <!--  Desktop layout: Collapsed Navigation Links -->
+              <a class="nav-link d-none d-lg-block" href="/" title="Home"
+                >Home</a
+              >
+              <a
+                class="nav-link d-none d-lg-block"
+                href="/#about"
+                title="Our story and manifesto"
+                >About</a
+              >
+              <a
+                class="nav-link d-none d-lg-block"
+                href="/#opening-hours"
+                title="Opening hours"
+                >Opening hours</a
+              >
+              <a
+                class="nav-link d-none d-lg-block"
+                href="/#contact"
+                title="Contact"
+                >Contact</a
+              >
+              <a
+                class="nav-link d-none d-lg-block"
+                href="/menu.html"
+                title="Browse menu"
+                >Menu</a
+              >
+              <a
+                class="nav-link active d-none d-lg-block"
+                href="/reservations.html"
+                aria-current="page"
+                title="Book a table"
+                >Reservations</a
+              >
+              <a
+                class="nav-link d-none d-lg-block"
+                href="/gallery.html"
+                title="Gallery"
                 >Gallery</a
               >
             </div>
