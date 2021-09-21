@@ -38,11 +38,11 @@
   <body class="d-flex flex-column h-100">
     <header>
       <!--  Navbar  -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0"
+      >
         <div class="container-fluid">
-          <h1 class="mb-0">
-            <a class="navbar-brand fs-1" href="/">LUX KITCHEN</a>
-          </h1>
+          <a class="navbar-brand" href="/"> <h1>LUX KITCHEN</h1></a>
           <!--  Toogle Button for mobile-tablet navbar -->
           <button
             class="navbar-toggler"
@@ -188,10 +188,10 @@
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
         <h2>Menu</h2>
-        <button type="button" class="btn btn-secondary">
-          <a href="/" title="Home Lux Kitchen">Home</a>
-        </button>
-        <button type="button" class="btn btn-light">
+
+        <a href="/#lunch-dinner" title="Book a table">Lunch and dinner menu</a>
+        <a href="/drinks" title="Book a table">Drinks</a>
+        <button type="button" class="btn btn-dark">
           <a href="/reservations.html" title="Book a table">Reserve table</a>
         </button>
         <button type="button" class="btn btn-dark">
@@ -209,14 +209,12 @@
               tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
             >
-              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i
-            ></a>
-            <a
+              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
+            ><a
               href="https://www.facebook.com/luxkitchen.se"
               tittle="Facebook @luxkitchen.se"
               target="_blank"
-            >
-              <i class="fab fa-facebook-square mx-2"></i
+              ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
               href="https://www.instagram.com/luxkitchen.se/"
@@ -232,11 +230,11 @@
               <i class="far fa-envelope mx-2"></i
             ></a>
           </div>
-          <div class="copyright">
+          <small class="copyright">
             &copy; 2002 Lux Kitchen. All rights reserved.
-          </div>
+          </small>
         </div>
-        <div class="footer-credentials float-sm-end">
+        <small class="footer-credentials float-sm-end">
           <a
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
@@ -250,7 +248,7 @@
             target="_blank"
             >Oksana Stalbovskaya</a
           >.
-        </div>
+        </small>
       </div>
     </footer>
     <!-- BOOTSTRAP 5.0.2  JS -->

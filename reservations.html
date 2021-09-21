@@ -38,11 +38,11 @@
   <body class="d-flex flex-column h-100">
     <header>
       <!--  Navbar  -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0"
+      >
         <div class="container-fluid">
-          <h1 class="mb-0">
-            <a class="navbar-brand fs-1" href="/">LUX KITCHEN</a>
-          </h1>
+          <a class="navbar-brand" href="/"> <h1>LUX KITCHEN</h1></a>
           <!--  Toogle Button for mobile-tablet navbar -->
           <button
             class="navbar-toggler"
@@ -187,16 +187,173 @@
 
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
-        <h2>Reservations</h2>
-        <button type="button" class="btn btn-secondary">
-          <a href="/" title="Home Lux Kitchen">Home</a>
-        </button>
-        <button type="button" class="btn btn-light">
-          <a href="/menu.html" title="Browse menu">Browse menu</a>
-        </button>
-        <button type="button" class="btn btn-dark">
-          <a href="/gallery.html" title="Gallery Lux Kitchen">Gallery</a>
-        </button>
+        <section class="reservation-info mx-2 p-1 text-center">
+          <h3>Welcome!</h3>
+          <p>
+            Here you can reserv a table through our
+            <a href="#reservation-form" title="Submit reservation form"
+              >booking system</a
+            >.
+          </p>
+          <p>
+            Please note that we are unable to accommodate vegan menus or menus
+            free from milk protein.
+          </p>
+          <p>
+            For groups of more than 8 guests, please send a booking request to
+            <a
+              href="mailto:reservation@luxkitchen.se. "
+              title="Booking request email, LUX KITCHEN"
+              class="flex-nowrap"
+              >reservation@luxkitchen.se</a
+            >.
+          </p>
+          <p>
+            For any questions, please contact us by phone
+            <a
+              href="tel:+ 46(0)77-012 345"
+              title="Call to LUX KITCHEN"
+              class="flex-nowrap"
+              >+ 46(0)77-012 345</a
+            >.
+          </p>
+        </section>
+        <section class="reservation-form">
+          <!--Reservation Form Bootstrap -->
+          <form
+            class="mx-auto w-75 needs-validation my-3"
+            id="reservation-form"
+            novalidate
+          >
+            <fieldset>
+              <legend><h2 class="text-center">RESERVATION FORM</h2></legend>
+              <div class="mb-3">
+                <label for="guestName" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  id="guestName"
+                  name="guestName"
+                  class="form-control"
+                  required
+                  minlength="8"
+                  maxlength="50"
+                  tabindex="1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="guestMail" class="form-label">E-mail:</label>
+                <input
+                  type="email"
+                  id="guestMail"
+                  name="guestMail"
+                  class="form-control"
+                  required
+                  tabindex="2"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="guestPhone" class="form-label">Phone:</label>
+                <input
+                  type="tel"
+                  id="guestPhone"
+                  name="guestPhone"
+                  class="form-control"
+                  required
+                  minlength="10"
+                  tabindex="3"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="guestNumber" class="form-label"
+                  >Select number of quests:</label
+                >
+                <select
+                  id="guestNumber"
+                  name="guestNumber"
+                  class="form-select"
+                  required
+                >
+                  <option value="1">1</option>
+                  <option selected value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select your party size.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="reservationDate" class="form-label">Date: </label>
+                <input
+                  type="date"
+                  id="reservationDate"
+                  name="reservationDate"
+                  class="form-control"
+                  value=""
+                  min="2021-09-20"
+                  max="2022-09-20"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="reservationDate" class="form-label">Time: </label>
+                <input
+                  type="time"
+                  id="reservationTime"
+                  name="reservationTime"
+                  class="form-control"
+                  value=""
+                  min="11:00"
+                  max="22:00"
+                  step="1800"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="guestRequest" class="form-label"
+                  >Special request:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="guestRequest"
+                  name="guestRequest"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+              <div class="mb-3">
+                <button
+                  type="submit"
+                  class="btn btn-dark mb-3 px-4 rounded-pill"
+                >
+                  Confirm reservation
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
       </div>
     </main>
 
@@ -209,14 +366,12 @@
               tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
             >
-              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i
-            ></a>
-            <a
+              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
+            ><a
               href="https://www.facebook.com/luxkitchen.se"
               tittle="Facebook @luxkitchen.se"
               target="_blank"
-            >
-              <i class="fab fa-facebook-square mx-2"></i
+              ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
               href="https://www.instagram.com/luxkitchen.se/"
@@ -232,11 +387,11 @@
               <i class="far fa-envelope mx-2"></i
             ></a>
           </div>
-          <div class="copyright">
+          <small class="copyright">
             &copy; 2002 Lux Kitchen. All rights reserved.
-          </div>
+          </small>
         </div>
-        <div class="footer-credentials float-sm-end">
+        <small class="footer-credentials float-sm-end">
           <a
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
@@ -250,7 +405,7 @@
             target="_blank"
             >Oksana Stalbovskaya</a
           >.
-        </div>
+        </small>
       </div>
     </footer>
     <!-- Reservation form JavaScript -->

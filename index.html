@@ -38,11 +38,11 @@
   <body class="d-flex flex-column h-100">
     <header>
       <!--  Navbar  -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0"
+      >
         <div class="container-fluid">
-          <h1 class="mb-0">
-            <a class="navbar-brand fs-1" href="/">LUX KITCHEN</a>
-          </h1>
+          <a class="navbar-brand" href="/"> <h1>LUX KITCHEN</h1></a>
           <!--  Toogle Button for mobile-tablet navbar -->
           <button
             class="navbar-toggler"
@@ -204,8 +204,8 @@
             <a href="/menu.html" title="Browse menu">Browse menu</a>
           </div>
         </section>
-        <div class="d-flex justify-content-center">
-          <a href="/#about" title="Read more"
+        <div class="arrow-link d-flex justify-content-center">
+          <a href="/#about" title="Read more" class="point"
             ><img
               src="/media/icon_arrow_long_down.svg"
               height="60"
@@ -214,7 +214,7 @@
               itemprop="image"
           /></a>
         </div>
-        <section class="about" id="about">
+        <section class="about mt-5" id="about">
           <article class="our-story">
             <h2 class="text-center">Our story</h2>
             <p>
@@ -251,34 +251,36 @@
           </article>
           <div class="forth-bg-color">Enjoy the Lux Kitchen experience</div>
         </section>
-        <section class="opening-hours ms-5" id="opening-hours">
+        <section class="opening-hours m-4" id="opening-hours">
           <h2>Opening hours</h2>
           <ul>
             <li>Tue-Fri: 11:00 – 23:00</li>
             <li>Sat-Sun: 17.00 – 23.00</li>
           </ul>
         </section>
-        <section class="contact ms-5" id="contact">
+        <section class="contact m-4" id="contact">
           <h2>Contact</h2>
           <ul>
             <li>
+              <i class="fas fa-map-pin ms-1 me-2"></i>
               <a
                 href="https://goo.gl/maps/avhRvnDNgXHAHYXh7"
                 title="Open location in Maps"
-                ><i class="fas fa-map-pin ms-1 me-2"></i>Lyxigastegatan 1, 112
-                22 Stockholm</a
+                >Lyxigastegatan 1, 112 22 Stockholm</a
               >
             </li>
             <li>
+              <i class="fas fa-phone me-2"></i>
               <a href="tel:+ 46(0)77-012 345" title="Call to LUX KITCHEN"
-                ><i class="fas fa-phone me-2"></i>+ 46(0)77-012 345</a
+                >+ 46(0)77-012 345</a
               >
             </li>
             <li>
+              <i class="far fa-envelope me-2"></i>
               <a
                 href="mailto:hello@luxkitchen.se"
                 title="Mail to hello@luxkitchen.se"
-                ><i class="far fa-envelope me-2"></i>hello@luxkitchen.se</a
+                >hello@luxkitchen.se</a
               >
             </li>
           </ul>
@@ -316,11 +318,11 @@
               <i class="far fa-envelope mx-2"></i
             ></a>
           </div>
-          <div class="copyright">
+          <small class="copyright">
             &copy; 2002 Lux Kitchen. All rights reserved.
-          </div>
+          </small>
         </div>
-        <div class="footer-credentials float-sm-end">
+        <small class="footer-credentials float-sm-end">
           <a
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
@@ -334,7 +336,7 @@
             target="_blank"
             >Oksana Stalbovskaya</a
           >.
-        </div>
+        </small>
       </div>
     </footer>
 
