@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Montserrat:wght@200;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <!-- BOOTSTRAP 5.0.2 CSS -->
@@ -187,11 +187,14 @@
 
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
-        <section class="reservation-info mx-2 p-1 text-center">
+        <section class="reservation-info mx-2 p-3 text-center">
           <h3>Welcome!</h3>
           <p>
             Here you can reserv a table through our
-            <a href="#reservation-form" title="Submit reservation form"
+            <a
+              class="reservation-links"
+              href="#reservation-form"
+              title="Submit reservation form"
               >booking system</a
             >.
           </p>
@@ -204,7 +207,7 @@
             <a
               href="mailto:reservation@luxkitchen.se. "
               title="Booking request email, LUX KITCHEN"
-              class="flex-nowrap"
+              class="reservation-links flex-nowrap"
               >reservation@luxkitchen.se</a
             >.
           </p>
@@ -213,7 +216,7 @@
             <a
               href="tel:+ 46(0)77-012 345"
               title="Call to LUX KITCHEN"
-              class="flex-nowrap"
+              class="reservation-links flex-nowrap"
               >+ 46(0)77-012 345</a
             >.
           </p>
@@ -226,18 +229,40 @@
             novalidate
           >
             <fieldset>
-              <legend><h2 class="text-center">RESERVATION FORM</h2></legend>
+              <legend>
+                <h2 class="header-form flex-nowrap text-center text-uppercase">
+                  <i class="fas fa-crown fs-6 pe-2"></i>Lux kitchen<i
+                    class="fas fa-crown fs-6 ps-2"
+                  ></i>
+                </h2>
+                <h5 class="text-center">Lyxigastegatan 1, Stockholm</h5>
+              </legend>
               <div class="mb-3">
-                <label for="guestName" class="form-label">Name:</label>
+                <label for="guestFirstName" class="form-label"
+                  >First name:</label
+                >
                 <input
                   type="text"
-                  id="guestName"
-                  name="guestName"
+                  id="guestFirstName"
+                  name="guestFirstName"
                   class="form-control"
                   required
-                  minlength="8"
+                  minlength="2"
                   maxlength="50"
                   tabindex="1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="guestLastName" class="form-label">Last name:</label>
+                <input
+                  type="text"
+                  id="guestLastName"
+                  name="guestLastName"
+                  class="form-control"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                  tabindex="2"
                 />
               </div>
               <div class="mb-3">
@@ -248,25 +273,26 @@
                   name="guestMail"
                   class="form-control"
                   required
-                  tabindex="2"
+                  tabindex="3"
                 />
               </div>
+
               <div class="mb-3">
-                <label for="guestPhone" class="form-label">Phone:</label>
+                <label for="guestPhone" class="form-label">Phone number:</label>
                 <input
                   type="tel"
                   id="guestPhone"
                   name="guestPhone"
                   class="form-control"
                   required
-                  minlength="10"
-                  tabindex="3"
+                  minlength="8"
+                  tabindex="4"
                 />
               </div>
 
               <div class="mb-3">
                 <label for="guestNumber" class="form-label"
-                  >Select number of quests:</label
+                  >Number of quests:</label
                 >
                 <select
                   id="guestNumber"
@@ -289,7 +315,9 @@
               </div>
 
               <div class="mb-3">
-                <label for="reservationDate" class="form-label">Date: </label>
+                <label for="reservationDate" class="form-label"
+                  >Select date:
+                </label>
                 <input
                   type="date"
                   id="reservationDate"
@@ -302,7 +330,9 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="reservationDate" class="form-label">Time: </label>
+                <label for="reservationDate" class="form-label"
+                  >Select time:
+                </label>
                 <input
                   type="time"
                   id="reservationTime"
@@ -337,16 +367,26 @@
                   required
                 />
                 <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
+                  I agree to Lux Kitchen's terms of Use and conditions. We
+                  promiss to process your personal data for the purposes of
+                  booking and customer relations only.</label
+                >
                 <div class="invalid-feedback">
                   You must agree before submitting.
                 </div>
               </div>
-              <div class="mb-3">
+              <div class="mb-5">
                 <button
                   type="submit"
-                  class="btn btn-dark mb-3 px-4 rounded-pill"
+                  id="sumbitButton"
+                  class="
+                    sumbitButton
+                    btn btn-dark
+                    px-4
+                    py-2
+                    rounded-pill
+                    text-uppercase
+                  "
                 >
                   Confirm reservation
                 </button>

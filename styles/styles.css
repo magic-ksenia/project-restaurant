@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 14px;
+  font-size: 100%;
 }
 
 body {
@@ -53,7 +53,6 @@ h2 {
 }
 
 h3 {
-  padding-top: 50px;
   font-size: 1.7rem;
   font-weight: 600;
 }
@@ -66,23 +65,13 @@ article {
   margin-inline: 1rem;
 }
 
-/* NAVBAR */
+/* <HEADER>  */
 nav a.nav-link {
   font-family: var(--second-font);
   text-transform: uppercase;
 }
 
-/* Navbar links Desktop */
-nav a.nav-link.d-lg-block:hover {
-  border-bottom: 3px solid var(--contrast-color);
-}
-nav a.nav-link.d-lg-block.active {
-  background-color: #ffffff27;
-  border-radius: 5px 5px 0 0;
-  border-bottom: 3px solid var(--contrast-color);
-}
-
-/* Navbar links Mobile and Tablet */
+/* Nav-links Mobile and Tablet */
 nav a.nav-link.d-lg-none.active {
   font-weight: 700;
 }
@@ -92,11 +81,33 @@ nav a.nav-link.d-lg-none:hover {
   text-decoration: none !important;
 }
 
+/* Nav-links Desktop */
+nav a.nav-link.d-lg-block:hover {
+  border-bottom: 3px solid var(--contrast-color);
+}
+nav a.nav-link.d-lg-block.active {
+  background-color: #ffffff27;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid var(--contrast-color);
+}
+
+/* <FOOTER> */
+footer a {
+  color: var(--second-text-color);
+}
+footer a:hover,
+footer a:active {
+  color: var(--contrast-color);
+  text-shadow: 0px 0px 15px var(--third-text-color);
+  text-decoration: none;
+}
+
+/* HOMEPAGE */
 section.hero-home {
+  padding-top: 50px;
   padding-bottom: 230px;
   margin-bottom: -40px;
 }
-
 .nav-links a {
   font-size: 0.6rem;
   font-weight: 500;
@@ -110,7 +121,6 @@ section.hero-home {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-
 .nav-links a:hover,
 .nav-links a:active {
   color: var(--second-text-color);
@@ -137,20 +147,36 @@ section.hero-home {
   left: 0.15rem;
 }
 
+/* Brown sections styling */
+aside {
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 1.5rem;
+  padding-block: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.third-bg-color {
+  color: var(--first-text-color);
+  background: var(--third-bg-color);
+}
+.forth-bg-color {
+  color: var(--second-text-color);
+  background: var(--forth-bg-color);
+}
+
+/* Contacts anb Opening Hours lists*/
 ul {
   padding-left: 0px;
   list-style-type: none;
 }
-
 li {
-  margin-block: 10px;
+  margin-block: 0.75rem;
 }
-
 li a {
   color: var(--first-text-color);
   text-decoration: none;
 }
-
 li a:hover,
 li a:active {
   color: var(--first-text-color);
@@ -158,36 +184,22 @@ li a:active {
   font-weight: 500;
 }
 
-div.third-bg-color {
-  background: var(--third-bg-color);
-  text-transform: uppercase;
-  text-align: center;
-  margin-block: 1.25rem;
-  padding-block: 0.6rem;
-  font-size: 1.1rem;
-  font-weight: 500;
+/* RESERVATIONS PAGE*/
+h2.header-form {
+  font-size: 1.7rem;
 }
-
-div.forth-bg-color {
-  color: var(--second-text-color);
-  background: var(--forth-bg-color);
-  text-transform: uppercase;
-  text-align: center;
-  margin-block: 1.25rem;
-  padding-block: 0.6rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-footer a {
-  color: var(--second-text-color);
-}
-
-footer a:hover,
-footer a:active {
-  color: var(--contrast-color);
-  text-shadow: 0px 0px 15px var(--third-text-color);
+a.reservation-links {
+  color: var(--first-text-color);
   text-decoration: none;
+  font-weight: 500;
+}
+a.reservation-links:hover,
+a.reservation-links:active {
+  color: var(--first-text-color);
+  border-bottom: 2px solid var(--contrast-color);
+}
+form {
+  max-width: 650px;
 }
 
 /* Large devices (desktops, 992px and up)*/
