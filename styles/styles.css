@@ -63,6 +63,8 @@ section {
 
 article {
   margin-inline: 1rem;
+  text-align: justify;
+  max-width: 700px;
 }
 
 /* <HEADER>  */
@@ -144,9 +146,25 @@ section.hero-home {
   border-radius: 2rem;
   position: relative;
   top: 4.8rem;
-  left: 0.15rem;
+  /*left: 0.15rem;*/
 }
 
+/* Background grafic styling */
+.article-dg {
+  display: inline-block;
+}
+img.wine-sketch {
+  max-width: 130px;
+  height: 55%;
+  float: left;
+  vertical-align: middle;
+}
+img.bargin-sketch {
+  max-width: 170px;
+  height: 65%;
+  float: left;
+  vertical-align: middle;
+}
 /* Brown sections styling */
 aside {
   text-transform: uppercase;
@@ -156,6 +174,7 @@ aside {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 .third-bg-color {
   color: var(--first-text-color);
   background: var(--third-bg-color);
@@ -198,8 +217,16 @@ a.reservation-links:active {
   color: var(--first-text-color);
   border-bottom: 2px solid var(--contrast-color);
 }
+
+/* FORM styling*/
 form {
   max-width: 650px;
+}
+.invalid-feedback {
+  color: #ff606e;
+}
+.valid-feedback {
+  color: #2acc80;
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -217,11 +244,4 @@ form {
   article {
     margin-inline: 2.25rem;
   }
-}
-.invalid-feedback {
-  color: #ff606e;
-}
-
-.valid-feedback {
-  color: #2acc80;
 }
