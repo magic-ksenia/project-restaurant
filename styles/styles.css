@@ -218,3 +218,10 @@ form {
     margin-inline: 2.25rem;
   }
 }
+.invalid-feedback {
+  color: #ff606e;
+}
+
+.valid-feedback {
+  color: #2acc80;
+}
