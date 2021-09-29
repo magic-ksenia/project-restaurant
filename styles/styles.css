@@ -72,7 +72,7 @@ article {
   max-width: 700px;
 }
 
-/* <HEADER>  */
+/* ---------- <HEADER> ------------- */
 nav a.nav-link {
   font-family: var(--second-font);
   text-transform: uppercase;
@@ -98,7 +98,7 @@ nav a.nav-link.d-lg-block.active {
   border-bottom: 3px solid var(--contrast-color);
 }
 
-/* <FOOTER> */
+/* ----------- <FOOTER> ------------ */
 footer a {
   color: var(--second-text-color);
 }
@@ -109,10 +109,13 @@ footer a:active {
   text-decoration: none;
 }
 
-/* HOMEPAGE */
+/* -------- HOMEPAGE ---------------*/
 section.hero-home {
-  padding-top: 50px;
-  padding-bottom: 240px;
+  padding-top: 10vh;
+}
+.nav-links {
+  margin-bottom: 42vh;
+  margin-top: 10vh;
 }
 .nav-links a {
   font-size: 0.6rem;
@@ -135,7 +138,6 @@ section.hero-home {
 
 /* Styling of nav-image ARROW*/
 div.nav-arrow {
-  margin-top: -75px;
   height: 70px;
 }
 a.arrow-link {
