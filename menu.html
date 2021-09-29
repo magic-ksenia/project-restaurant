@@ -187,16 +187,55 @@
 
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
-        <h2>Menu</h2>
+        <section class="menu mx-md-5 mx-3 my-5">
+          <h2>Menu</h2>
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks" onclick="openMenu(event, 'Lunch')">
+              Lunch
+            </button>
+            <button class="tablinks" onclick="openMenu(event, 'Dinner')">
+              Dinner
+            </button>
+            <button class="tablinks" onclick="openMenu(event, 'Drinks')">
+              Drinks
+            </button>
+          </div>
 
-        <a href="/#lunch-dinner" title="Book a table">Lunch and dinner menu</a>
-        <a href="/drinks" title="Book a table">Drinks</a>
-        <button type="button" class="btn btn-dark">
-          <a href="/reservations.html" title="Book a table">Reserve table</a>
-        </button>
-        <button type="button" class="btn btn-dark">
-          <a href="/gallery.html" title="Gallery Lux Kitchen">Gallery</a>
-        </button>
+          <!-- Tab content -->
+          <div id="Lunch" class="tabcontent">
+            <h3 class="my-3">Lunch</h3>
+            <p>Lunch menu comes here</p>
+          </div>
+
+          <div id="Dinner" class="tabcontent">
+            <h3 class="my-3">Dinner</h3>
+            <p>Dinner menu comes here</p>
+          </div>
+
+          <div id="Drinks" class="tabcontent">
+            <h3 class="my-3">Drinks</h3>
+            <p>Drinks menu and Wine list comes here</p>
+          </div>
+        </section>
+        <div class="d-flex justify-content-evenly py-4">
+          <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
+            <a
+              href="/reservations.html"
+              title="Book a table"
+              class="text-uppercase text-light text-decoration-none"
+              >Reserve table</a
+            >
+          </button>
+          <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
+            <a
+              href="/gallery.html"
+              title="Gallery Lux Kitchen"
+              class="text-uppercase text-light text-decoration-none"
+              >Gallery</a
+            >
+          </button>
+        </div>
       </div>
     </main>
 
@@ -251,6 +290,25 @@
         </small>
       </div>
     </footer>
+    <script>
+      function openMenu(evt, menuType) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(menuType).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
     <!-- BOOTSTRAP 5.0.2  JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
