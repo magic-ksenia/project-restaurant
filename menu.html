@@ -197,10 +197,10 @@
             background-size: cover;
           "
         >
-          <h3 class="d-none">Menu</h3>
+          <h2 class="d-none">Fine Dining at Lux Kitchen</h2>
         </section>
         <section class="menu mx-md-5 m-3">
-          <h2 class="w-100 text-center">Menu</h2>
+          <h2 class="mx-auto text-center">Menu</h2>
           <!-- Tab links -->
           <div class="tab">
             <button class="tablinks" onclick="openMenu(event, 'Lunch')">
@@ -231,31 +231,18 @@
             <p>Fine selection of drinks and snacks</p>
           </div>
         </section>
+
         <section class="gastronomy mx-md-5 mx-3 my-4">
-          <h3 class="text-center my-3 py-2">Climate-neutral gastronomy</h3>
-          <p class="p-2 m-0">
+          <h3 class="text-center my-3 pt-3">Climate-neutral gastronomy</h3>
+          <p class="pb-2 m-0">
             Gastronomy also means being responsible towards the environment. We
             have control over the products we use and how much food we throw
             away, so we pursue a strict climate protection strategy.
           </p>
 
-          <div class="d-flex justify-content-evenly py-4">
-            <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
-              <a
-                href="/reservations.html"
-                title="Book a table"
-                class="text-uppercase text-light text-decoration-none"
-                >Reserve table</a
-              >
-            </button>
-            <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
-              <a
-                href="/gallery.html"
-                title="Gallery Lux Kitchen"
-                class="text-uppercase text-light text-decoration-none"
-                >Gallery</a
-              >
-            </button>
+          <div class="nav-links-menu d-flex justify-content-evenly py-4">
+            <a href="/reservations.html" title="Book a table">Reserve table</a>
+            <a href="/gallery.html" title="Gallery Lux Kitchen">View Gallery</a>
           </div>
         </section>
       </div>
@@ -267,14 +254,10 @@
           <div class="social-media-links">
             <a
               href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
-              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
             >
               <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
-            ><a
-              href="https://www.facebook.com/luxkitchen.se"
-              tittle="Facebook @luxkitchen.se"
-              target="_blank"
+            ><a href="https://www.facebook.com/luxkitchen.se" target="_blank"
               ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
@@ -312,6 +295,8 @@
         </small>
       </div>
     </footer>
+    <!--Removed tittles, validator.w3.ord tittle="Tripadvisor Reviews Lux Kitchen Stockholm"   tittle="Facebook @luxkitchen.se"-->
+
     <script>
       function openMenu(evt, menuType) {
         // Declare all variables
