@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: var(--first-font);
-  overflow-x: hidden;
+  /* overflow-x: unset;*/
   background-color: var(--second-bg-color);
   color: var(--first-text-color);
   margin: 0;
@@ -48,9 +48,11 @@ h1 {
 h2 {
   font-size: 1.75rem;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   font-weight: 700;
   border-bottom: 3px solid var(--contrast-color);
+  max-width: 750px;
 }
 
 h3 {
@@ -63,13 +65,14 @@ p {
 }
 
 section {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 article {
   margin-inline: 1rem;
   text-align: justify;
-  max-width: 700px;
+  max-width: 800px;
+  padding: 0.5rem;
 }
 
 /* ---------- <HEADER> ------------- */
@@ -111,11 +114,11 @@ footer a:active {
 
 /* -------- HOMEPAGE ---------------*/
 section.hero-home {
-  padding-top: 10vh;
+  position: relative;
+  padding-top: 8.5vh;
 }
 .nav-links {
-  margin-bottom: 42vh;
-  margin-top: 10vh;
+  margin-top: 8.5vh;
 }
 .nav-links a {
   font-size: 0.6rem;
@@ -138,14 +141,16 @@ section.hero-home {
 
 /* Styling of nav-image ARROW*/
 div.nav-arrow {
+  position: absolute;
   height: 70px;
+  width: 100%;
+  bottom: -20px;
 }
 a.arrow-link {
   text-decoration: none;
   display: block;
   position: absolute;
 }
-
 a.arrow-link::before {
   content: "";
   background-color: var(--contrast-color);
@@ -328,7 +333,7 @@ img.bargin-sketch {
 aside {
   text-transform: uppercase;
   text-align: center;
-  margin-block: 1.5rem;
+  margin-bottom: 1.5rem;
   padding-block: 0.9rem;
   font-size: 1.1rem;
   font-weight: 500;
@@ -349,6 +354,7 @@ ul {
   list-style-type: none;
 }
 li {
+  text-align: left;
   margin-block: 0.75rem;
 }
 li a {
@@ -435,11 +441,7 @@ form {
     margin-bottom: 0;
   }
 
-  section {
-    margin-bottom: 1.25rem;
-  }
-
   article {
-    margin-inline: 2.25rem;
+    margin-inline: 2rem;
   }
 }

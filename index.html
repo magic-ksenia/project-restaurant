@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=x, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
     <meta name="author" content="Oksana's Restaurant Lux Kitchen" />
     <meta
@@ -36,11 +36,9 @@
   </head>
 
   <body class="d-flex flex-column h-100">
-    <header>
+    <header class="sticky-top">
       <!--  Navbar  -->
-      <nav
-        class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-lg-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"> <h1>LUX KITCHEN</h1></a>
           <!--  Toogle Button for mobile-tablet navbar -->
@@ -193,8 +191,8 @@
         <section
           class="hero-home"
           style="
-            height: 85vh;
-            background-image: url(/media/home-bg-image-mobile.png);
+            height: 80vh;
+            background-image: url(/media/homepage/home-bg-image-mobile.png);
             background-repeat: no-repeat;
             background-size: cover;
           "
@@ -207,26 +205,26 @@
           <div class="d-flex justify-content-center nav-arrow">
             <a href="/#about" title="Read more" class="arrow-link">
               <img
-                src="/media/icon_arrow_long_down.svg"
+                src="/media/homepage/icon_arrow_long_down.svg"
                 height="60"
                 width="40"
-                alt="icon-arrow-down"
+                alt=""
                 class="arrow-img"
               />
             </a>
           </div>
         </section>
 
-        <section class="about mt-5" id="about">
+        <section class="about mt-5 pt-3" id="about">
+          <h2 class="text-center mx-4 p-2 mx-md-auto">Our story</h2>
           <article class="our-story mx-auto p-2">
-            <h2 class="text-center mx-3">Our story</h2>
             <div class="article-bg">
               <img
                 class="wine-sketch m-2"
-                src="/media/sketch_wine_bottle.svg"
+                src="/media/homepage/sketch_wine_bottle.svg"
                 width="465"
                 height="446"
-                alt="wine bottle sketch"
+                alt=""
               />
             </div>
             <p>
@@ -247,15 +245,15 @@
             </p>
           </article>
           <aside class="third-bg-color">Artisanal quality since 2002</aside>
+          <h2 class="text-center mx-4 p-2 mx-md-auto">Our traditions</h2>
           <article class="our-traditions mx-auto p-2">
-            <h2 class="text-center mx-3">Our traditions</h2>
             <div class="article-bg">
               <img
                 class="bargin-sketch m-2"
-                src="/media/sketch_bargin.svg"
+                src="/media/homepage/sketch_bargin.svg"
                 width="465"
                 height="446"
-                alt="wine bottle sketch"
+                alt=""
               />
             </div>
             <p>
@@ -272,18 +270,18 @@
           </article>
           <aside class="forth-bg-color">Enjoy the Lux Kitchen experience</aside>
         </section>
-        <section class="opening-hours mx-4 my-2" id="opening-hours">
-          <article class="mx-auto p-2">
-            <h2>Opening hours</h2>
+        <section class="opening-hours mx-3 mx-md-5 p-2" id="opening-hours">
+          <h2 class="mx-auto">Opening hours</h2>
+          <article class="mx-auto px-md-4">
             <ul>
-              <li>Tue-Fri: 11:00 – 23:00</li>
-              <li>Sat-Sun: 17.00 – 23.00</li>
+              <li>Tue – Fri: &nbsp;&nbsp;&nbsp;11.00 – 23.00</li>
+              <li>Sat – Sun: &nbsp;17.00 – 23.00</li>
             </ul>
           </article>
         </section>
-        <section class="contact mx-4 mb-3" id="contact">
-          <article class="mx-auto p-2">
-            <h2>Contact</h2>
+        <section class="contact mx-3 mx-md-5 p-2" id="contact">
+          <h2 class="mx-auto">Contact</h2>
+          <article class="mx-auto px-md-4">
             <ul>
               <li>
                 <i class="fas fa-map-pin ms-1 me-2"></i>
@@ -295,7 +293,7 @@
               </li>
               <li>
                 <i class="fas fa-phone me-2"></i>
-                <a href="tel:+ 46(0)77-012 345" title="Call to LUX KITCHEN"
+                <a href="tel:+4677012345" title="Call to LUX KITCHEN"
                   >+ 46(0)77-012 345</a
                 >
               </li>
@@ -312,21 +310,17 @@
         </section>
       </div>
     </main>
-
+    <!--tittle="Tripadvisor Reviews Lux Kitchen Stockholm"   tittle="Facebook @luxkitchen.se"-->
     <footer class="footer mt-auto bg-dark">
       <div class="container-fluid m-0 text-light text-center p-2">
         <div class="project-footer d-sm-flex justify-content-between">
           <div class="social-media-links">
             <a
               href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
-              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
             >
               <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
-            ><a
-              href="https://www.facebook.com/luxkitchen.se"
-              tittle="Facebook @luxkitchen.se"
-              target="_blank"
+            ><a href="https://www.facebook.com/luxkitchen.se" target="_blank"
               ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
