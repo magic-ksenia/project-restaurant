@@ -352,6 +352,7 @@ aside {
 ul {
   padding-left: 0px;
   list-style-type: none;
+  margin-bottom: 0;
 }
 li {
   text-align: left;
@@ -396,7 +397,12 @@ form {
   color: #2acc80;
 }
 
-/*MENU PAGE*/
+/*--------  MENU PAGE---------------*/
+section.hero-menu {
+  position: relative;
+  padding-top: 8.5vh;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;

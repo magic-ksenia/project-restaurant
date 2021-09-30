@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
 
-  <body class="d-flex flex-column h-100">
-    <header>
+  <body class="d-flex flex-column">
+    <header class="sticky-top">
       <!--  Navbar  -->
       <nav
         class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0"
@@ -187,8 +187,20 @@
 
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
-        <section class="menu mx-md-5 mx-3 my-5">
-          <h2>Menu</h2>
+        <section
+          class="hero-menu"
+          style="
+            width: 100%;
+            height: 55vh;
+            background-image: url(/media/menu/fruit\ salad\ 550x550\ px.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <h3 class="d-none">Menu</h3>
+        </section>
+        <section class="menu mx-md-5 m-3">
+          <h2 class="w-100 text-center">Menu</h2>
           <!-- Tab links -->
           <div class="tab">
             <button class="tablinks" onclick="openMenu(event, 'Lunch')">
@@ -205,37 +217,47 @@
           <!-- Tab content -->
           <div id="Lunch" class="tabcontent">
             <h3 class="my-3">Lunch</h3>
-            <p>Lunch menu comes here</p>
+            <p>Delicious lunchtime options</p>
           </div>
 
           <div id="Dinner" class="tabcontent">
             <h3 class="my-3">Dinner</h3>
-            <p>Dinner menu comes here</p>
+            <p>Evening indulgence</p>
           </div>
 
           <div id="Drinks" class="tabcontent">
             <h3 class="my-3">Drinks</h3>
-            <p>Drinks menu and Wine list comes here</p>
+            <p>Fine wines from our wine list.</p>
+            <p>Fine selection of drinks and snacks</p>
           </div>
         </section>
-        <div class="d-flex justify-content-evenly py-4">
-          <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
-            <a
-              href="/reservations.html"
-              title="Book a table"
-              class="text-uppercase text-light text-decoration-none"
-              >Reserve table</a
-            >
-          </button>
-          <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
-            <a
-              href="/gallery.html"
-              title="Gallery Lux Kitchen"
-              class="text-uppercase text-light text-decoration-none"
-              >Gallery</a
-            >
-          </button>
-        </div>
+        <section class="gastronomy mx-md-5 mx-3 my-4">
+          <h3 class="text-center my-3 py-2">Climate-neutral gastronomy</h3>
+          <p class="p-2 m-0">
+            Gastronomy also means being responsible towards the environment. We
+            have control over the products we use and how much food we throw
+            away, so we pursue a strict climate protection strategy.
+          </p>
+
+          <div class="d-flex justify-content-evenly py-4">
+            <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
+              <a
+                href="/reservations.html"
+                title="Book a table"
+                class="text-uppercase text-light text-decoration-none"
+                >Reserve table</a
+              >
+            </button>
+            <button type="button" class="btn btn-dark px-4 py-2 rounded-pill">
+              <a
+                href="/gallery.html"
+                title="Gallery Lux Kitchen"
+                class="text-uppercase text-light text-decoration-none"
+                >Gallery</a
+              >
+            </button>
+          </div>
+        </section>
       </div>
     </main>
 
