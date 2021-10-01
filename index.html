@@ -10,17 +10,19 @@
       name="google-site-verification"
       content="kySRJhozAw8FmMpdUB38Pm1Co-IOqiPyPQq5_0VCTaQ"
     />
-    <!-- 1. Sign in to your domain name provider (e.g. godaddy.com or namecheap.com)
-          2. Copy the TXT record below into the DNS configuration for luxkitchen.netlify.app
-        google-site-verification=FajFYbPIBzdKx_D4fyJrTTgKmiO6BgSjgrAMb7Vgomw
-      3. Press verify below
-Note: DNS changes may take some time to apply. If Search Console doesn’t find the record immediately, wait a day and then try to verify again-->
     <meta name="author" content="Oksana's Restaurant Lux Kitchen" />
     <meta
       name="description"
       content="LUX KITCHEN is a classic brasserie in the heart of Stockholm, founded in 2002. It offers a sophisticated atmosphere, high-class food and drinks, and out of the ordinary service. Indulge yourself. Enjoy the Lux Kitchen experience."
     />
     <title>LUX KITCHEN</title>
+    <link
+      rel="preload"
+      as="image"
+      href="media/homepage/home-bg-img-mobile-600.png"
+      imagesrcset="home-bg-img-mobile-600.png 400w, home-bg-img-web-800.png 800w"
+      imagesizes="50vw"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,7 +51,9 @@ Note: DNS changes may take some time to apply. If Search Console doesn’t find 
       <!--  Navbar  -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-lg-0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"> <h1>LUX KITCHEN</h1></a>
+          <a class="navbar-brand d-flex justify-items-center pt-lg-0" href="/">
+            <h1>LUX KITCHEN</h1></a
+          >
           <!--  Toogle Button for mobile-tablet navbar -->
           <button
             class="navbar-toggler"
@@ -197,17 +201,9 @@ Note: DNS changes may take some time to apply. If Search Console doesn’t find 
 
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
-        <section
-          class="hero-home"
-          style="
-            height: 80vh;
-            background-image: url(/media/homepage/home-bg-image-mobile.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-          "
-        >
+        <section class="hero-home">
           <h2 class="d-none">Stockholm Luxury Restaurant, Lux Kitchen</h2>
-          <h3 class="text-light text-center">Indulge Yourself</h3>
+          <h3 class="text-light">Indulge Yourself</h3>
           <div class="nav-links d-flex justify-content-evenly">
             <a href="/reservations.html" title="Book a table">Reserve table</a>
             <a href="/menu.html" title="Browse menu">Browse menu</a>
