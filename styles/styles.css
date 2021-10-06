@@ -77,6 +77,7 @@ article {
 }
 
 /* ---------- <HEADER> ------------- */
+
 nav a.nav-link {
   font-family: var(--second-font);
   text-transform: uppercase;
@@ -116,13 +117,6 @@ footer a:active {
 /* -------- HOMEPAGE ---------------*/
 section.hero-home {
   position: relative;
-  height: 80vh;
-  width: auto;
-  background-image: url(/media/homepage/home-bg-img-mobile-600.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #0a0a0a;
   padding-top: 8.5vh;
 }
 .hero-home h3 {
@@ -480,8 +474,22 @@ section.hero-menu {
   background: var(--first-bg-color);
   border: 2px solid var(--second-text-color);
 }
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 768px) {
+/* Large devices (tablets desktops, 800px and up to 1000)*/
+@media (min-width: 500.1px) and (max-width: 800px) {
+  section.hero-home {
+    background-image: url(/media/homepage/home-bg-800x512.jpeg);
+  }
+  .hero-home h3 {
+    font-size: 1.9rem;
+    text-align: left;
+    padding-top: 17vh;
+    padding-left: 1.5rem;
+  }
+  .nav-links {
+    max-width: 22.5rem;
+  }
+}
+@media (min-width: 800.1px) {
   h1 {
     font-size: 1.9rem;
   }
@@ -489,12 +497,7 @@ section.hero-menu {
     margin-inline: 2rem;
   }
   section.hero-home {
-    height: 80vh;
-    background-image: url(/media/homepage/home-bg-img-web-800.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0a0a0a;
+    background-image: url(/media/homepage/home-bg-1200x768.jpeg);
   }
   .hero-home h3 {
     font-size: 1.9rem;
