@@ -1,24 +1,18 @@
-/*const navLinks = document.querySelectorAll(".nav-link");
-console.log(navLinks);
-const menuToggle = document.getElementById("navbarNavAltMarkup");
-const bsCollapse = new bootstrap.Collapse(menuToggle);
-navLinks.forEach((l) => {
-  l.addEventListener("click", () => {
-    bsCollapse.toggle();
+const navbarNavLink = document.querySelectorAll(".navbar-nav>a");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+navbarNavLink.forEach((I) => {
+  I.addEventListener("click", () => {
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
   });
 });
 
-$("body").on("click", "[data-trigger-button]", function () {
-  if (window.matchMedia("(max-width: 991px)").matches) {
-    var $this = $(this),
-      cNavButton = $this.data("trigger-button");
-    $(cNavButton).trigger("click");
-  }
-});*/
-
-$("html, body").animate(
+document.querySelector("html, body").animate(
   {
-    scrollTop: $("#about").offset().top - $("header").height(),
+    scrollTop: document.querySelector("section").offsetTop - 68,
   },
   1000
 );
