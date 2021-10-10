@@ -23,24 +23,30 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- Preload background image -->
+    <!-- Preload background images -->
     <link
       rel="preload"
       href="/media/homepage/home-bg-576x876.jpeg"
       as="image"
-      media="(max-width: 500px)"
+      media="(max-width: 575px)"
     />
     <link
       rel="preload"
       href="/media/homepage/home-bg-800x512.jpeg"
       as="image"
-      media="(min-width: 500.1px) and (max-width: 800px)"
+      media="(min-width: 575.1px) and (max-width: 800px)"
     />
     <link
       rel="preload"
       href="/media/homepage/home-bg-1200x768.jpeg"
       as="image"
       media="(min-width: 800.1px)"
+    />
+    <link rel="preload" href="/media/homepage/sketch_bargin.svg" as="image" />
+    <link
+      rel="preload"
+      href="/media/homepage/sketch_wine_bottle.svg"
+      as="image"
     />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -103,7 +109,7 @@
                   bg-light
                   text-dark text-center text-decoration-underline
                 "
-                href="index.html#about"
+                href="/#about"
                 title="Our story and manifesto"
                 >About</a
               >
@@ -114,7 +120,7 @@
                   bg-light
                   text-dark text-center text-decoration-underline
                 "
-                href="index.html#opening-hours"
+                href="/#opening-hours"
                 title="Opening hours"
                 >Opening hours</a
               >
@@ -125,7 +131,7 @@
                   bg-light
                   text-dark text-center text-decoration-underline
                 "
-                href="index.html#contact"
+                href="/#contact"
                 title="Contact"
                 >Contact</a
               >
@@ -219,7 +225,7 @@
           style="
             background-image: url(/media/homepage/home-bg-576x876.jpeg);
             background-color: #0a0a0a;
-            height: 83vh;
+            height: 81vh;
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -349,22 +355,30 @@
           <div class="social-media-links">
             <a
               href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
+              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
+              rel="noreferrer"
             >
               <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
-            ><a href="https://www.facebook.com/luxkitchen.se" target="_blank"
+            ><a
+              href="https://www.facebook.com/luxkitchen.se"
+              target="_blank"
+              tittle="Facebook @luxkitchen.se"
+              rel="noreferrer"
               ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
               href="https://www.instagram.com/luxkitchen.se/"
               title="Instagram @luxkitchen.se"
               target="_blank"
+              rel="noreferrer"
               ><i class="fab fa-instagram mx-2"></i
             ></a>
             <a
               href="mailto:hello@luxkitchen.se"
               title="Mail to hello@luxkitchen.se"
               target="_blank"
+              rel="noreferrer"
             >
               <i class="far fa-envelope mx-2"></i
             ></a>
@@ -378,6 +392,7 @@
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
             target="_blank"
+            rel="noreferrer"
             >Open-source project</a
           >
           by
@@ -385,6 +400,7 @@
             href="https://www.linkedin.com/in/oksana-stalbovskaya-19901126/"
             title="LinkedIn Oksana Stalbovskaya"
             target="_blank"
+            rel="noreferrer"
             >Oksana Stalbovskaya</a
           >.
         </small>

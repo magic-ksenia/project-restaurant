@@ -425,22 +425,30 @@
           <div class="social-media-links">
             <a
               href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
+              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
               target="_blank"
+              rel="noreferrer"
             >
               <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
-            ><a href="https://www.facebook.com/luxkitchen.se" target="_blank"
+            ><a
+              href="https://www.facebook.com/luxkitchen.se"
+              target="_blank"
+              tittle="Facebook @luxkitchen.se"
+              rel="noreferrer"
               ><i class="fab fa-facebook-square mx-2"></i
             ></a>
             <a
               href="https://www.instagram.com/luxkitchen.se/"
               title="Instagram @luxkitchen.se"
               target="_blank"
+              rel="noreferrer"
               ><i class="fab fa-instagram mx-2"></i
             ></a>
             <a
               href="mailto:hello@luxkitchen.se"
               title="Mail to hello@luxkitchen.se"
               target="_blank"
+              rel="noreferrer"
             >
               <i class="far fa-envelope mx-2"></i
             ></a>
@@ -454,6 +462,7 @@
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
             target="_blank"
+            rel="noreferrer"
             >Open-source project</a
           >
           by
@@ -461,45 +470,20 @@
             href="https://www.linkedin.com/in/oksana-stalbovskaya-19901126/"
             title="LinkedIn Oksana Stalbovskaya"
             target="_blank"
+            rel="noreferrer"
             >Oksana Stalbovskaya</a
           >.
         </small>
       </div>
     </footer>
-    <!--Removed tittles, validator.w3.ord tittle="Tripadvisor Reviews Lux Kitchen Stockholm"   tittle="Facebook @luxkitchen.se"-->
 
-    <!-- Validation of Reservation form JavaScript-->
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        "use strict";
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll(".requires-validation");
-        // Loop over them and prevent submission
-        Array.from(forms).forEach(function (form) {
-          form.addEventListener(
-            "submit",
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              } else {
-                alert(
-                  "Thank you! Your reservation has been confirmed. We look forward to seeing you soon."
-                );
-              }
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
     <!-- BOOTSTRAP 5.0.2  JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom Javascript, Validation of Reservation form    -->
+    <script src="/reservations.js"></script>
   </body>
 </html>

@@ -475,7 +475,7 @@ section.hero-menu {
   border: 2px solid var(--second-text-color);
 }
 /* Large devices (tablets desktops, 800px and up to 1000)*/
-@media (min-width: 500.1px) and (max-width: 800px) {
+@media (min-width: 575.1px) and (max-width: 800px) {
   section.hero-home {
     background-image: url(/media/homepage/home-bg-800x512.jpeg);
   }

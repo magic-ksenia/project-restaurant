@@ -10,9 +10,11 @@ navbarNavLink.forEach((I) => {
   });
 });
 
+// add function to listen anchor links in navbar addEventListener ("click", add class active to current anchor link and remove from class actove from others)
+
 document.querySelector("html, body").animate(
   {
     scrollTop: document.querySelector("section").offsetTop - 68,
   },
-  1000
+  100
 );
