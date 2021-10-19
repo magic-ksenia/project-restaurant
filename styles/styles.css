@@ -1,17 +1,14 @@
 :root {
   --first-font: "Montserrat", sans-serif; /*  font-weight: 400;500;  */
   --second-font: "Josefin Sans", sans-serif; /*  font-weight: 600;700;  */
-
   --first-bg-color: #0a0a0a;
   --second-bg-color: #fafafa;
   --third-bg-color: #a9927d;
   --forth-bg-color: #523629;
-
+  --contrast-color: #ffd35a;
   --first-text-color: #212121;
   --second-text-color: #fafafa;
   --third-text-color: #707070d7;
-
-  --contrast-color: #ffd35a;
 }
 
 html {
@@ -21,7 +18,6 @@ html {
 
 body {
   font-family: var(--first-font);
-  /* overflow-x: unset;*/
   background-color: var(--second-bg-color);
   color: var(--first-text-color);
   margin: 0;
@@ -115,15 +111,13 @@ footer a:active {
 }
 
 /* -------- HOMEPAGE ---------------*/
-section.hero-home {
-  position: relative;
-  padding-top: 8.5vh;
-}
 .hero-home h3 {
+  padding-top: 9vh;
   text-align: center;
 }
 .nav-links {
   margin-top: 8vh;
+  margin-bottom: 35vh;
 }
 .nav-links a {
   font-size: 0.6rem;
@@ -146,10 +140,11 @@ section.hero-home {
 
 /* Styling of nav-image ARROW*/
 div.nav-arrow {
-  position: absolute;
+  position: relative;
   height: 70px;
   width: 100%;
-  bottom: -20px;
+  bottom: -70px;
+  z-index: 2;
 }
 a.arrow-link {
   text-decoration: none;
@@ -487,14 +482,11 @@ section.hero-menu {
   border: 2px solid var(--second-text-color);
 }
 /* Large devices (tablets desktops, 800px and up to 1000)*/
-@media (min-width: 575.1px) and (max-width: 800px) {
-  section.hero-home {
-    background-image: url(/media/homepage/home-bg-800x512.jpeg);
-  }
+@media (min-width: 575.98px) and (max-width: 800px) {
   .hero-home h3 {
     font-size: 1.9rem;
     text-align: left;
-    padding-top: 17vh;
+    padding-top: 25vh;
     padding-left: 1.5rem;
   }
   .nav-links {
@@ -508,16 +500,16 @@ section.hero-menu {
   article {
     margin-inline: 2rem;
   }
-  section.hero-home {
-    background-image: url(/media/homepage/home-bg-1200x768.jpeg);
-  }
   .hero-home h3 {
     font-size: 1.9rem;
     text-align: left;
-    padding-top: 17vh;
+    padding-top: 25vh;
     padding-left: 1.5rem;
   }
   .nav-links {
     max-width: 22.5rem;
+  }
+  section.hero-home img {
+    object-position: center center !important;
   }
 }
