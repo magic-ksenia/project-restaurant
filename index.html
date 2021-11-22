@@ -213,7 +213,30 @@
         </div>
       </nav>
     </header>
-
+    <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+        viewBox="0 0 16 16"
+        role="img"
+        aria-label="Warning:"
+      >
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+        />
+      </svg>
+      <strong>Welcome to my website!</strong> It's not a real restaurant page.
+      This website was designed and built as a study project and has nothing.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
     <main class="flex-shrink-0">
       <div class="container-fluid px-0">
         <section
@@ -229,10 +252,10 @@
             src="/media/homepage/home-bg-576x876.jpeg"
             srcset="
               /media/homepage/home-bg-576x876.jpeg   576w,
-              /media/homepage/home-bg-576x876.jpeg 800цб
+              /media/homepage/home-bg-800x512.jpeg   800w,
               /media/homepage/home-bg-1200x768.jpeg 1200w
             "
-            sizes="25vw"
+            sizes="100vw"
             alt="Fine dining meal"
             style="
               height: 100%;
@@ -256,20 +279,21 @@
             <a href="/reservations.html" title="Book a table">Reserve table</a>
             <a href="/menu.html" title="Browse menu">Browse menu</a>
           </div>
-          <div class="d-flex justify-content-center nav-arrow">
-            <a href="/index.html#about" title="Read more" class="arrow-link">
-              <img
-                src="/media/homepage/icon_arrow_long_down.svg"
-                height="60"
-                width="40"
-                alt="vertical arrow"
-                class="arrow-img"
-              />
-            </a>
-          </div>
         </section>
 
-        <section class="about mt-5 pt-5" id="about">
+        <div class="d-flex justify-content-center nav-arrow">
+          <a href="/index.html#about" title="Read more" class="arrow-link">
+            <img
+              src="/media/homepage/icon_arrow_long_down.svg"
+              height="60"
+              width="40"
+              alt="vertical arrow"
+              class="arrow-img"
+            />
+          </a>
+        </div>
+
+        <section class="about mt-4" id="about">
           <h2 class="text-center mx-4 p-2 mx-md-auto">Our story</h2>
           <article class="our-story mx-auto p-2">
             <div class="article-bg">
@@ -299,7 +323,7 @@
             </p>
           </article>
           <aside class="third-bg-color">Artisanal quality since 2002</aside>
-          <h2 class="text-center mx-4 p-2 mx-md-auto">Our traditions</h2>
+          <h2 class="text-center mx-4 p-2 mt-5 mx-md-auto">Our traditions</h2>
           <article class="our-traditions mx-auto p-2">
             <div class="article-bg">
               <img
@@ -367,45 +391,43 @@
       </div>
     </main>
 
-    <footer class="footer mt-auto bg-dark">
-      <div class="container-fluid m-0 text-light text-center p-2">
-        <div class="project-footer d-sm-flex justify-content-between">
-          <div class="social-media-links">
-            <a
-              href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
-              tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
-            ><a
-              href="https://www.facebook.com/luxkitchen.se"
-              target="_blank"
-              tittle="Facebook @luxkitchen.se"
-              rel="noreferrer"
-              ><i class="fab fa-facebook-square mx-2"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/luxkitchen.se/"
-              title="Instagram @luxkitchen.se"
-              target="_blank"
-              rel="noreferrer"
-              ><i class="fab fa-instagram mx-2"></i
-            ></a>
-            <a
-              href="mailto:hello@luxkitchen.se"
-              title="Mail to hello@luxkitchen.se"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="far fa-envelope mx-2"></i
-            ></a>
-          </div>
-          <small class="copyright">
-            &copy; 2002 Lux Kitchen. All rights reserved.
-          </small>
+    <footer class="footer mt-auto text-light bg-dark">
+      <div class="my-1 text-center p-2">
+        <div class="social-media-links">
+          <a
+            href="https://www.tripadvisor.com/Restaurant_Review-Lux_Kitchen-Stockholm.html"
+            tittle="Tripadvisor Reviews Lux Kitchen Stockholm"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa fa-tripadvisor mx-2" aria-hidden="true"></i></a
+          ><a
+            href="https://www.facebook.com/luxkitchen.se"
+            target="_blank"
+            tittle="Facebook @luxkitchen.se"
+            rel="noreferrer"
+            ><i class="fab fa-facebook-square mx-2"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/luxkitchen.se/"
+            title="Instagram @luxkitchen.se"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fab fa-instagram mx-2"></i
+          ></a>
+          <a
+            href="mailto:hello@luxkitchen.se"
+            title="Mail to hello@luxkitchen.se"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="far fa-envelope mx-2"></i
+          ></a>
         </div>
-        <small class="footer-credentials float-sm-end">
+        <small class="copyright">
+          &copy; 2002 Lux Kitchen. All rights reserved. </small
+        ><br />
+        <small class="footer-credentials">
           <a
             href="https://github.com/magic-ksenia/project-restaurant"
             title="Project repo on GitHub @magic-ksenia"
@@ -415,7 +437,7 @@
           >
           by
           <a
-            href="https://www.linkedin.com/in/oksana-stalbovskaya-19901126/"
+            href="https://www.linkedin.com/in/oksana-stalbovskaya/"
             title="LinkedIn Oksana Stalbovskaya"
             target="_blank"
             rel="noreferrer"
